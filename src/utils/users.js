@@ -30,6 +30,7 @@ const addUser = ({ id, username, room }) => {
     return { user }
 }
 
+/* Delete User */
 const removeUser = (id) => {
     const index = users.findIndex((user) => user.id === id)
 
