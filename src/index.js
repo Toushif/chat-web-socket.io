@@ -53,7 +53,7 @@ io.on('connection', (socket) => {
         })
     })
 
-    socket.on('emitMessage', (msg, cb) => { //here we provide callback cb as the acknowledgment opf the client message recieved
+    socket.on('emitMessage', (msg, cb) => { //here we provide callback cb as the acknowledgment of the client message recieved
         const user = getUser(socket.id)
         if(!user) {
             return cb('Message not sent - some error occured')
