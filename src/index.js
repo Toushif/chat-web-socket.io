@@ -13,7 +13,7 @@ const {
 
 const app = express()
 const port = process.env.PORT || 3002
-const server = http.createServer(app) // this will create a web server explicity. Even if we dont do this express will create a web server for us behind the scenes. But here we create it so that we can pass it to socket.io
+const server = http.createServer(app) // this will create a web server explicitly. Even if we dont do this express will create a web server for us behind the scenes. But here we create it so that we can pass it to socket.io
 const io = socketio(server)
 
 const publicDirectory = path.join(__dirname, '../public')
