@@ -83,7 +83,7 @@ $form.addEventListener('submit', function(event) {
     
     element.btnSubmit.setAttribute('disabled', true)
 
-    socket.emit('emitMessage', entries.message, error => { //here we can pass a callback function as the last argument which acts as an acknowledgment of the message sent from the client. emitMessage is the name of the event, entries.inoutText1 is the data - but we can rovide as many number of data we can 1 or n number of arguments. Only the last argument needs to a callback function. 
+    socket.emit('emitMessage', entries.message, error => { //here we can pass a callback function as the last argument which acts as an acknowledgment of the message sent from the client. emitMessage is the name of the event, entries.inputText1 is the data - but we can rovide as many number of data we can 1 or n number of arguments. Only the last argument needs to a callback function. 
         element.btnSubmit.removeAttribute('disabled')
         element.message.value = ''
         element.message.focus()
